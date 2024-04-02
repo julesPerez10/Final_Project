@@ -1,0 +1,75 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #f01818, #ffffff); 
+}
+
+/* Tu CSS restante permanece igual */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d40c16;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info-img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+    width: auto;
+}
+
+footer {
+    background-color: #eee9e9;
+    color: #0e0d0d;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.contact-form button {
+    background-color: #ffbf00;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #df7701;
+}

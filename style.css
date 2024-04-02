@@ -1,0 +1,242 @@
+/* Importing the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Reset styles and general styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Remove default body margin */
+}
+
+/* Navigation Bar */
+.main-nav {
+    background-color: #085988ec; /* Navigation bar background color */
+    color: white; /* Text color in the navigation bar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 10px; /* Adjust padding as needed */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.main-nav .logo img {
+    max-height: 100%;
+    width: 50%;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 30px; /* Increase spacing between list items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00b7ff; /* Text color on hover */
+    transform: scale(1.1);
+}
+
+/* Navigation bar hover effect */
+.main-nav:hover {
+    top: 0;
+}
+
+/* Additional styles for small screens (less than 768px) */
+@media only screen and (max-width: 768px) {
+    .main-nav {
+        position: fixed; /* Fix navigation bar position */
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 8px;
+        white-space: normal;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        display: block;
+    }
+
+    /* Adjust position of image and donate button */
+    .container img,
+    .btn-donate {
+        margin-top: 60px;
+        z-index: 999;
+        position: relative;
+    }
+}
+
+/* Info section */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tl {
+    color: aliceblue;
+    text-align: center;
+}
+
+.happen {
+    color: rgb(55, 186, 238);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    height: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.btn-donate {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f80b03;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-donate:hover {
+    background-color: #fcfdfc;
+    color: rgb(243, 5, 5);
+}
+
+/* Container styles for info items */
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual info styles */
+.info {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(55, 186, 238);
+    transition: transform 0.3s ease-in-out;
+    font-size: 2vw;
+    min-width: 14px;
+    line-height: 1.5;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+}
+
+/* Adjust font size for medium screens */
+@media screen and (min-width: 768px) {
+    .info {
+        font-size: 1.5vw;
+    }
+}
+
+/* Adjust font size for large screens */
+@media screen and (min-width: 1200px) {
+    .info {
+        font-size: 1vw;
+    }
+}
+
+.info:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2b1a15;
+    padding: 50px 0;
+    position: absolute;
+    width: 100%;
+    color: aliceblue;
+    font-size: 12px;
+    background-image: linear-gradient(to top, #062043, rgb(0, 107, 200));
+}
+footer p{
+    font-size:15px;
+}
+footer img{
+    text-align: center;
+}
+footer h2{
+    font-size:24px;
+}
+ul {
+    list-style: none;
+}
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 85%; */
+    /* margin-left: 70px; */
+    /* margin-right: 40px; */
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex-basis: 30%;
+    padding: 11px;
+}
+.social p{
+    text-decoration: none!important;
+    font-size: 20px;
+    color: #ffffff;
+    padding-right: 260px;
+
+}
+.button {
+    background-color: rgb(0, 107, 200);
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    font-size:14px;
+    padding:12px 30px;
+    text-decoration: none;
+    justify-content: left;
+
+}
+.button:hover{
+    background-color: rgb(156, 0, 0);
+    color:white;
+}
